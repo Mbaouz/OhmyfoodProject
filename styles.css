@@ -1,0 +1,285 @@
+
+* {
+    font-family: 'Roboto', sans-serif;
+
+}
+   body {
+    margin: 0px;
+    max-width: 767.98px
+    
+   }
+   :root {
+
+     
+    --main-bg-color: var(--Grey, #353535)  ;
+   }
+
+    
+    
+
+
+/*Header*/
+
+.logo img{
+    display: flex;
+    height: 36px;
+    margin-top: 14px;
+    margin-left: 89px;
+    padding-right: 89px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 13px;
+    width: 100%;
+}
+
+.logo i{
+    color: #515152;
+    width: 30px;
+    margin-left: 17px;
+    display: none;
+}
+.location  { 
+    display:flex;
+    gap: 17px;
+    align-items: center;
+    justify-content: center;
+    background: var(--Grey-2, #EAEAEA);
+    height: 50px;
+   
+    
+    
+}
+.location input{
+    display: flex;
+    justify-content: center;
+    background: var(--Grey-2, #EAEAEA);
+    outline: none;
+    border-color: transparent;
+
+    
+}
+
+/*Main*/
+
+h1{
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 42px;
+    padding-right: 58px;
+   
+}
+h2 {
+    color: var(--Grey, #353535);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 34px;
+    padding-right: 26px;
+    
+}
+
+
+
+.BtExplore button {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+    border-color: transparent;
+    margin-left: 82px;
+     /* Shadow/Button */
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 218px;
+    height: 50px;
+    
+    /* Button text*/
+    color: var(--White, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 13px ;
+    
+}
+
+/*Section fonctionnement*/
+
+.fa-list , .fa-mobile-screen-button {
+
+    color: #7E7E7E;
+}
+.fa-store{
+
+    color: #9356dc;
+}
+
+
+
+.BtFonction{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ h3 , h4 {
+
+margin-left: 20px;
+}
+
+
+.Group{
+
+    display: flex;
+    margin-left: 50px;
+    gap: 28px;
+    align-items: center;
+    border-radius: 20px;
+    background: var(--Background, #F6F6F6);
+    /* Shadow/Instructions */
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.NumberF{
+
+    margin-right:  10px;
+}
+
+/* section Restaurant */
+
+.Restaurant  {
+
+    display: flex;
+    background-color:var(--main-bg-color);
+    gap: 18px;
+    box-sizing: border-box;
+    
+    
+    
+
+} 
+
+.nouveau {
+    display: flex;
+    position: absolute;
+    margin-left: 268px;
+    margin-top: 12px;
+    margin-right: 12px;
+    
+    
+
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 18px;
+    margin-left: 17px;
+    
+
+    
+}
+    
+   
+
+.card-content img {
+
+    width: 346px;
+    height: 231px;
+    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-sizing: border-box;
+    
+}
+
+.card-title i{
+
+    display: flex;
+
+    margin-right: 20px;
+    width: 22px;
+    height: 21px;
+    
+    
+
+}
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    
+    
+}
+
+    
+
+.card-content p{
+    margin-left: 20px;
+}
+
+/*Footer*/
+
+.footer-list{
+    background: var(--Grey, #353535);
+    display: flex;
+    width: 100%;
+    padding: 22px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    
+    
+
+}
+
+h5 {
+    color: var(--White, #FFF);
+    font-family: Shrikhand;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom : 16px;
+    margin-top: 0px;
+    
+
+}
+
+h6 {
+    color:#FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0px;
+    padding-bottom: 7px;
+
+    
+   
+    
+}
+
+.list {
+
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    
+
+    
+}
+
+.fa-hand-shake .fa-xs {
+
+    width: 11.918px;
+    height: 13px;
+    transform: rotate(45);
+}
