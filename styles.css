@@ -395,20 +395,63 @@ h6 {
 
 /* Section Restaurants*/
 
-.card-content {
-    width: min-content;
-    
-    
-
+.Restaurant{
+    padding-left: 180px;
+    padding-right: 180px;
 }
 
-.Restaurant {
+.Cards {
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2,1fr);
+    gap:50px 100px;
 
 }
 
-.Restaurant h3{ display:flex }
-       }
+/*Footer*/
+
+.footer-list{
+
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    
+}
+    
+
+
+ h5{
+
+    order: 4;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 0;
+    margin-top: 30px;
+    
+
+}
+
+.list i  {
+
+    margin-bottom: 0;
+    margin-top: 20px;
+    
+    
+}
+
+.list .fa-handshake{
+
+    margin-top: 20px;
+}
+
+h6{
+
+    margin-top: 30px;
+   
+}
+
+    }
