@@ -101,6 +101,8 @@ h3{
     font-weight: 300;
     margin-top: 40px;
     margin-bottom: 0;
+    
+    
 
 }
 /* Cards menu price*/
@@ -160,6 +162,13 @@ h4{
 
 /*Footer*/
 
+footer {
+
+position: relative;
+bottom: -1162px;
+   
+}
+
 .footer-list{
     background: var(--Grey, #353535);
     display: flex;
@@ -178,9 +187,7 @@ h5 {
     color: var(--White, #FFF);
     font-family: Shrikhand;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     margin-bottom : 16px;
     margin-top: 0px;
     
@@ -190,8 +197,8 @@ h5 {
 h6 {
     color:#FFF;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
+    font-family: Roboto;
     margin: 0px;
     padding-bottom: 7px;
     cursor: pointer;
@@ -219,12 +226,126 @@ h6 {
     transform: rotate(-45deg);
     margin: 0px;
     left: 1px;
+    bottom: 4px;
 }
 .fa-utensils{
-    width: 11px;
-    height: 13px;
-   
-
+    position: relative;
+    font-size: 13px;
+    bottom:4px
 }
 
-/* Media*/
+/* Media*///////////////////////////////////////////////////////////////////////////
+
+@media (min-width:1024px  )
+
+{
+    
+    .Menu{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   .cards {
+    position: relative;
+    display: flex;
+    width: 1055px;
+    flex-direction: column;
+    align-content: center;
+   
+
+   }
+   
+   
+   .card-price{
+
+    padding: 12px 193px 0px 193px;
+
+   }
+
+   .title{
+    
+    justify-content: center;
+
+    i{
+
+        position: relative;
+        
+    }
+
+
+
+   }
+
+
+   h3{
+
+    padding-left: 193px;
+   }
+   
+   
+    /*Footer*/
+
+
+    footer {
+
+        position: relative;
+        bottom: -10px;
+       
+        
+           
+        }
+
+
+    .footer-list{
+    
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+        
+    }
+        
+    
+    
+     h5{
+    
+        order: 4;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 0;
+        margin-top: 30px;
+        
+    
+    }
+    
+    .list i  {
+    
+        margin-bottom: 0;
+        margin-top: 31px;
+        font-size: 13px;
+        
+    }
+    
+    .list .fa-handshake{
+        position: relative;
+        margin-top: 20px;
+        font-size: 11px;
+        top: 2px;
+    }
+    
+    h6{
+    
+        margin-top: 30px;
+       
+    }
+    
+
+
+
+
+
+
+}

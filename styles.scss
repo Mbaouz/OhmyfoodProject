@@ -372,10 +372,15 @@ h6 {
     transform: rotate(-45deg);
     margin: 0px;
     left: 1px;
+    font-size: 11px;
+    bottom:3px
+    
 }
 .fa-utensils{
-    width: 11px;
-    height: 13px;
+    position: relative;
+    font-size: 13px;
+    bottom: 2px;
+    
    
 
 }
@@ -454,13 +459,15 @@ h6 {
 
     margin-bottom: 0;
     margin-top: 20px;
-    
+    font-size: 13px;
     
 }
 
 .list .fa-handshake{
-
+    position: relative;
     margin-top: 20px;
+    font-size: 11px;
+    top: 2px;
 }
 
 h6{
