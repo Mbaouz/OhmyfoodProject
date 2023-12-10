@@ -98,6 +98,11 @@ h2 {
   display: flex;
   justify-content: center;
   cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 600ms;
+}
+.BtExplore:hover {
+  opacity: 0.7;
 }
 
 /*Section fonctionnement*/
@@ -173,7 +178,6 @@ h4, p {
   box-sizing: border-box;
   cursor: pointer;
 }
-
 .card-content img {
   display: flex;
   height: 231px;
@@ -183,15 +187,6 @@ h4, p {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.card-text {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 12px;
-  padding-left: 13px;
-  padding-top: 20px;
-}
-
 .card-content span {
   display: flex;
   position: absolute;
@@ -205,29 +200,34 @@ h4, p {
   height: 29px;
   color: #008766;
 }
-
 .card-content .fa-regular {
   position: absolute;
   bottom: 25px;
   right: 35px;
-  color: #000;
+  color: black;
   font-size: 30px;
 }
-
+.card-content .fa-regular a:active {
+  display: none;
+}
 .card-content .fa-solid {
   position: absolute;
   bottom: 25px;
   right: 35px;
   font-size: 30px;
-  font-style: linear-gradient(#9356DC, #FF79DA);
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  display: none;
+}
+.card-content .fa-solid a:active {
+  background: #9356DC;
 }
 
-.fa-thin {
-  position: absolute;
-  bottom: 25px;
-  right: 35px;
-  color: #000;
-  font-size: 30px;
+.card-text {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+  padding-left: 13px;
+  padding-top: 20px;
 }
 
 /*Footer*/

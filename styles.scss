@@ -127,6 +127,16 @@ h2 {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    transition-property: opacity;
+    transition-duration: 600ms;
+
+    &:hover{
+       
+       opacity : .7
+        
+    }
+
+
 }
 
 /*Section fonctionnement*/
@@ -231,25 +241,66 @@ h4 , p{
     box-sizing: border-box;
     cursor: pointer;
     
-    
-    
+    img {
 
+        display:flex;
+        height: 231px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        box-sizing: border-box;
+        object-fit: cover;
+    }
     
-}
+    span{
+        display: flex;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        background-color:#99E2D0 ;
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 29px;
+        color:#008766 ;
+        
+        
+        
+    
+    }
+
+
+    .fa-regular  {
     
    
+        position: absolute;
+        bottom: 25px;
+        right: 35px;
+        color:  black;
+        font-size: 30px;
+        a:active {
+            display: none;
+        }
+           
+        
+    }
 
-.card-content img {
+    .fa-solid {
+        position: absolute;
+        bottom: 25px;
+        right: 35px;
+        font-size: 30px;
+        background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%)) ;
+        display: none;
+        
+        a:active {
+            background: #9356DC;
+        }
+        
+    }
 
-    display:flex;
-    height: 231px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    box-sizing: border-box;
-    object-fit: cover;
 }
-
-
+       
 .card-text {
     display: flex;
     flex-direction: column;
@@ -260,55 +311,6 @@ h4 , p{
 }
 
     
-.card-content span{
-    display: flex;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    background-color:#99E2D0 ;
-    font-size: 14px;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 29px;
-    color:#008766 ;
-    
-    
-    
-
-}
-
- .card-content .fa-regular  {
-    
-   
-    position: absolute;
-    bottom: 25px;
-    right: 35px;
-    color: #000;
-    font-size: 30px;
-    
-    
-    
-    
-}
-.card-content .fa-solid {
-    position: absolute;
-    bottom: 25px;
-    right: 35px;
-    font-size: 30px;
-    font-style: linear-gradient(#9356DC ,#FF79DA );
-    
-    
-}
-.fa-thin{
-    position: absolute;
-    bottom: 25px;
-    right: 35px;
-    color: #000;
-    font-size: 30px;
-    
-
-}
 
 
 /*Footer*/
