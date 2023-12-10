@@ -166,7 +166,6 @@ h4, p {
   box-sizing: border-box;
   padding: 20px;
   width: 100%;
-  margin-bottom: 20px;
 }
 
 .card-content {
@@ -177,6 +176,7 @@ h4, p {
   border-radius: 15px;
   box-sizing: border-box;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 .card-content img {
   display: flex;
@@ -330,7 +330,7 @@ h6 {
   }
   .list i {
     margin-bottom: 0;
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 13px;
   }
   .list .fa-handshake {
