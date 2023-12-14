@@ -71,6 +71,11 @@ h2 {
   padding-right: 26px;
 }
 
+a {
+  color: initial;
+  border: none;
+}
+
 .BtExplore button {
   display: flex;
   align-items: center;
