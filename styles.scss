@@ -110,12 +110,7 @@ h2 {
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    transition-property:transform ;
-    transition-duration: 1s;
-    &:hover {
-        transform: opacity .7
-         
-    }
+    
     
 }
 
@@ -273,16 +268,17 @@ h4 , p{
     }
 
 
-    .fa-regular  {
+    .fa-regular {
     
    
         position: absolute;
         bottom: 25px;
         right: 35px;
-        color:  black;
         font-size: 30px;
+       
         a:active {
             display: none;
+            
         }
            
         
@@ -293,16 +289,20 @@ h4 , p{
         bottom: 25px;
         right: 35px;
         font-size: 30px;
-        background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%)) ;
         display: none;
         
         a:active {
-            background: #9356DC;
+            
+            -webkit-text-fill-color: transparent;
+            background: -webkit-linear-gradient(#FF79DA, #9356DC);
+            -webkit-background-clip: text;
         }
         
     }
 
 }
+
+
        
 .card-text {
     display: flex;
@@ -367,21 +367,21 @@ h6 {
     gap: 11px;
     cursor: pointer;
     
-    
+    .fa-handshake  {
+        position: relative;
+        width: 11.918px;
+        transform: rotate(-45deg);
+        margin: 0px;
+        left: 1px;
+        font-size: 11px;
+        bottom:3px
+        
+    }
 
     
 }
 
-.list .fa-handshake  {
-    position: relative;
-    width: 11.918px;
-    transform: rotate(-45deg);
-    margin: 0px;
-    left: 1px;
-    font-size: 11px;
-    bottom:3px
-    
-}
+
 .fa-utensils{
     position: relative;
     font-size: 13px;
