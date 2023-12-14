@@ -200,21 +200,24 @@ h4, p {
   bottom: 25px;
   right: 35px;
   font-size: 30px;
-}
-.card-content .fa-regular a:active {
-  display: none;
+  transition: 0.5s;
 }
 .card-content .fa-solid {
   position: absolute;
   bottom: 25px;
   right: 35px;
   font-size: 30px;
-  display: none;
-}
-.card-content .fa-solid a:active {
+  transition: 0.5s;
+  opacity: 0;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
+}
+.card-content-hearts:hover .fa-solid {
+  opacity: 1;
+}
+.card-content-hearts:hover .fa-regular {
+  opacity: 0;
 }
 
 .card-text {
