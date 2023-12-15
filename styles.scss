@@ -68,6 +68,14 @@
 
 /*Main*/
 
+.title-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--Background, #F6F6F6);
+    height: 300px
+}
+
 h1{
     color: #000;
     text-align: center;
@@ -84,6 +92,7 @@ h2 {
     font-weight: 300;
     padding-left: 34px;
     padding-right: 26px;
+    font-family: Roboto;
     
 }
 a { 
@@ -406,9 +415,15 @@ h6 {
 
 }
 
-/* Media*/
+/* Media*////////////////////////////////////////////////////////////////
 
 @media (min-width:1024px  ) {
+
+
+    .title-home{
+
+        background-color: white;
+    }
 
     /*Section Fonctionnement*/
 
