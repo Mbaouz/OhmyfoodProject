@@ -187,7 +187,7 @@ h3{
     }
     p{
         font-weight: 300;
-        font-size: 15.043px;
+        font-size: 15px;
         font-family: Roboto;
         margin-top: 5px;
         margin-bottom: 0;
@@ -208,6 +208,34 @@ h4{
     padding-top: 40px;
     margin-bottom: 40px;
 }
+
+/* Animation */
+.check {
+                  background:#1ef1c6 ;
+                  width: 59px;
+                  border-radius: 0px 15px 15px 0px;
+                  height: 75px;
+                  position: absolute;
+                  right:192px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  i{
+                    
+                    -webkit-text-fill-color:white;
+                     font-size: 20px;
+                  
+                    
+
+                    
+                  }
+                  
+                
+}
+
+
+
 
 /*Footer*/
 
