@@ -79,6 +79,12 @@ h1, h2 {
   border-top-left-radius: 40px;
   width: 100%;
 }
+.cards .BtCommand {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
 .cards button {
   display: flex;
   align-items: center;
@@ -116,25 +122,31 @@ h3 {
 .card-price {
   padding: 12px 15px 0px 15px;
 }
+.card-price:hover .check {
+  transform: translate(-100%, 0);
+}
+.card-price:hover span {
+  transform: translate(-150%, 0);
+}
 .card-price .card-content {
   border-radius: 15.043px;
   background: var(--White, #FFF);
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   padding: 15px;
 }
-
-.subtitle {
+.card-price .card-content .subtitle {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.subtitle span {
+.card-price .card-content .subtitle span {
   color: #353535;
   font-family: Roboto;
   font-size: 15.043px;
   font-weight: 700;
+  transition: transform 400ms ease-in-out;
 }
-.subtitle p {
+.card-price .card-content .subtitle p {
   font-weight: 300;
   font-size: 15px;
   font-family: Roboto;
@@ -148,13 +160,6 @@ h4 {
   font-family: Roboto;
 }
 
-.BtCommand {
-  display: flex;
-  justify-content: center;
-  padding-top: 40px;
-  margin-bottom: 40px;
-}
-
 /* Animation */
 .check {
   background: #1ef1c6;
@@ -162,14 +167,27 @@ h4 {
   border-radius: 0px 15px 15px 0px;
   height: 75px;
   position: absolute;
-  right: 192px;
+  right: -46px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 400ms ease-in-out;
 }
 .check i {
   -webkit-text-fill-color: white;
   font-size: 20px;
+}
+
+.check-hidden {
+  background: #F6F6F6;
+  width: 60px;
+  border-radius: 0px 15px 15px 0px;
+  height: 76px;
+  position: absolute;
+  right: -46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Footer*/
@@ -255,6 +273,15 @@ h6 {
   h3 {
     position: relative;
     left: 192px;
+  }
+  /*animation desktop*/
+  .check {
+    position: absolute;
+    right: 132px;
+  }
+  .check-hidden {
+    position: absolute;
+    right: 132px;
   }
   /*Footer*/
   footer {
