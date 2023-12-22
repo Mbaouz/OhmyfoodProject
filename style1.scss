@@ -68,7 +68,7 @@ font-weight: 400;
         position: absolute;
         transition: 0.5s;
         font-size: 30px;
-       
+        right: 30px;
        
     }
     
@@ -81,7 +81,7 @@ font-weight: 400;
      -webkit-text-fill-color: transparent;
      background: -webkit-linear-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
-    
+    right: 30px;
 
    }
 
@@ -273,7 +273,6 @@ h4{
     align-items: center;
     
 
-
 }
 
 
@@ -381,12 +380,13 @@ h6 {
    }
 
    .title{
-    
+    display:flex;
     justify-content: center;
-
-    i{
-
-        position: relative;
+    
+    .title-hearts{
+       
+       position: absolute;
+       right: 300px;
         
     }
 
@@ -415,7 +415,7 @@ h6 {
 
     
     position: absolute;
-    right:132px;
+    right:131px;
     
 
 

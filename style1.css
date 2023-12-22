@@ -51,6 +51,7 @@ h1, h2 {
   position: absolute;
   transition: 0.5s;
   font-size: 30px;
+  right: 30px;
 }
 .title .fa-solid {
   position: absolute;
@@ -60,6 +61,7 @@ h1, h2 {
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
+  right: 30px;
 }
 .title-hearts {
   display: flex;
@@ -265,10 +267,12 @@ h6 {
     padding: 12px 193px 0px 193px;
   }
   .title {
+    display: flex;
     justify-content: center;
   }
-  .title i {
-    position: relative;
+  .title .title-hearts {
+    position: absolute;
+    right: 300px;
   }
   h3 {
     position: relative;
@@ -281,7 +285,7 @@ h6 {
   }
   .check-hidden {
     position: absolute;
-    right: 132px;
+    right: 131px;
   }
   /*Footer*/
   footer {
