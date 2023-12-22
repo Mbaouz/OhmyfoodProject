@@ -128,7 +128,19 @@ h3 {
   transform: translate(-100%, 0);
 }
 .card-price:hover span {
-  transform: translate(-150%, 0);
+  transform: translate(-200%, 0);
+}
+.card-price:hover p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 220px;
+  white-space: nowrap;
+}
+.card-price:hover h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 220px;
+  white-space: nowrap;
 }
 .card-price .card-content {
   border-radius: 15.043px;

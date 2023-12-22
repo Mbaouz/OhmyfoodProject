@@ -182,7 +182,25 @@ h3{
         
        }
        &:hover span{
-        transform : translate(-150%,0);
+        transform : translate(-200%,0);
+
+       }
+
+       &:hover p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 220px;
+        white-space: nowrap;
+
+       }
+
+       &:hover h4 {
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 220px;
+        white-space: nowrap;
+        
 
        }
     
@@ -215,6 +233,7 @@ h3{
                 font-family: Roboto;
                 margin-top: 5px;
                 margin-bottom: 0;
+                
             }
         
         }
@@ -228,6 +247,8 @@ h4{
     margin: 0;
     font-size: 18px;
     font-family: Roboto;
+    
+    
 }
 
 
