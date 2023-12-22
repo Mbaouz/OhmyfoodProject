@@ -75,7 +75,7 @@ font-weight: 400;
    .fa-solid {
 
     position: absolute;
-    font-size: 32px;
+    font-size: 31px;
     transition: 0.5s;
     opacity: 0; 
      -webkit-text-fill-color: transparent;
@@ -204,7 +204,7 @@ h3{
 
        }
     
-    .card-content{
+      .card-content{
 
         border-radius: 15.043px;
         background: var(--White, #FFF);
@@ -397,6 +397,30 @@ h6 {
    .card-price{
 
     padding: 12px 193px 0px 193px;
+
+    &:hover p {
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 400px;
+        white-space: nowrap;
+
+        
+       }
+
+       &:hover h4 {
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 400px;
+        white-space: nowrap;
+        
+
+       }
+
+
+
+
 
    }
 

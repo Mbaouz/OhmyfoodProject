@@ -55,7 +55,7 @@ h1, h2 {
 }
 .title .fa-solid {
   position: absolute;
-  font-size: 32px;
+  font-size: 31px;
   transition: 0.5s;
   opacity: 0;
   -webkit-text-fill-color: transparent;
@@ -277,6 +277,18 @@ h6 {
   }
   .card-price {
     padding: 12px 193px 0px 193px;
+  }
+  .card-price:hover p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 400px;
+    white-space: nowrap;
+  }
+  .card-price:hover h4 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 400px;
+    white-space: nowrap;
   }
   .title {
     display: flex;
