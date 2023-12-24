@@ -1,122 +1,131 @@
 
-body{
-    margin:0;
-    width:100%;
+body {
+    margin: 0;
+    width: 100%;
 
 }
 
-.header1{
- display: flex;
- justify-content: center;
- padding-top: 14px;
- padding-bottom: 13px;
- gap: 42px;
- a  {
+a {
+    text-decoration: none;
+}
+
+.header1 {
     display: flex;
-    position: absolute;
-    align-self: center;
-    left:17px; 
-    color:#353535 ;
-    
-}
+    justify-content: center;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    gap: 42px;
+
+    a {
+        display: flex;
+        position: absolute;
+        align-self: center;
+        left: 17px;
+        color: #353535;
+
+    }
 
 
 }
 
 
 
-h1{
+h1 {
 
     display: flex;
     justify-self: center;
-  
-    
-}
-h1 , h2 {
- margin: 0;
-font-family: Shrikhand;
-font-size: 28px;
-font-weight: 400;
+
 
 }
+
+h1,
+h2 {
+    margin: 0;
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-weight: 400;
+
+}
+
 /*section Menu*/
 
-.Menu{
-    
+.Menu {
+
     img {
         object-fit: cover;
         height: 275px;
         position: relative;
-        top: 30px; 
-        width: 100%;  
-       
+        top: 30px;
+        width: 100%;
+
+    }
+
 }
-  
-}
 
 
 
-.title{
+.title {
     display: flex;
     align-items: center;
     gap: 50px;
     padding-top: 30px;
     padding-left: 20px;
 
-    .fa-regular{
+    .fa-regular {
 
         position: absolute;
         transition: 0.5s;
         font-size: 30px;
         right: 30px;
-       
+
     }
-    
-   .fa-solid {
 
-    position: absolute;
-    font-size: 31px;
-    transition: 0.5s;
-    opacity: 0; 
-     -webkit-text-fill-color: transparent;
-     background: -webkit-linear-gradient(#FF79DA, #9356DC);
-    -webkit-background-clip: text;
-    right: 30px;
+    .fa-solid {
 
-   }
+        position: absolute;
+        font-size: 31px;
+        transition: 0.5s;
+        opacity: 0;
+        -webkit-text-fill-color: transparent;
+        background: -webkit-linear-gradient(#FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        right: 30px;
 
-   &-hearts {
-    display: flex;
-    align-items: center;
+    }
 
-        &:hover{
+    &-hearts {
+        display: flex;
+        align-items: center;
+
+        &:hover {
 
             .fa-solid {
-    
-                opacity:1;
-            }
-            .fa-regular {
-        
-                opacity:0;
-            }
-    
-    
-        }
-    
 
-   }
-        
-    
+                opacity: 1;
+            }
+
+            .fa-regular {
+
+                opacity: 0;
+            }
+
+
+        }
+
+
+    }
+
+
 }
 
-.cards{
+.cards {
     position: absolute;
     background: #F6F6F6;
     border-top-right-radius: 40px;
-    border-top-left-radius:  40px;
+    border-top-left-radius: 40px;
     width: 100%;
-    
-    
+
+
 
     .BtCommand {
 
@@ -125,174 +134,172 @@ font-weight: 400;
         padding-top: 40px;
         margin-bottom: 40px;
     }
-    
-   
+
+
     button {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-    background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-    border-color: transparent;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    width: 218px;
-    height: 50px;
-    color: var(--White, #FFF);
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition-property: opacity;
-    transition-duration: 600ms;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+        border-color: transparent;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        width: 218px;
+        height: 50px;
+        color: var(--White, #FFF);
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition-property: opacity;
+        transition-duration: 600ms;
 
-    &:hover{
-       
-       opacity : .7
-        
-    }
-    
+        &:hover {
+
+            opacity: .7
+        }
+
 
     }
-    
+
 }
-h3{
+
+h3 {
     position: relative;
-    left: 15px;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 300;
     margin-top: 40px;
     margin-bottom: 0;
-    border-bottom: 3px  solid #99E2D0;
+    border-bottom: 3px solid #99E2D0;
     width: 40px;
-    
+    margin-left: 15px;
+
 
 }
+
+.menu-max {
+    max-width: 635px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 /* Cards menu price*/
 
 
 .card-price {
 
-   padding: 12px 15px 0px 15px;
+    padding: 12px 0px 0px 15px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 15px;
+
+    &:hover .ellipsis-h4 p {
+        margin-right: 59px;
+
+    }
+
+
+    &:hover .check {
+        margin-right: 59px;
+    }
+
+    &:hover span {
+        margin-right: 59px;
+    }
 
     
-    &:hover .check  {
-        transform : translate(-100%,0);
-       
-        
-       }
-       &:hover span{
-        transform : translate(-200%,0);
 
-       }
-
-       &:hover p {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        width: 220px;
-        white-space: nowrap;
-
-       }
-
-       &:hover h4 {
-
-        text-overflow: ellipsis;
-        overflow: hidden;
-        width: 220px;
-        white-space: nowrap;
-        
-
-       }
-    
-      .card-content{
+    .card-content {
 
         border-radius: 15.043px;
         background: var(--White, #FFF);
         box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
-        padding: 15px ; 
-        
+        padding: 15px;
 
-        .subtitle{
+
+        .subtitle {
 
             display: flex;
             align-items: center;
             justify-content: space-between;
-            
-        
-            span{   
+
+
+            span {
                 color: #353535;
                 font-family: Roboto;
                 font-size: 15.043px;
                 font-weight: 700;
-                transition: transform 400ms ease-in-out;
-                 
+                transition: margin 400ms ease-in-out;
+                white-space: nowrap;
             }
-            p{
+
+            p {
                 font-weight: 300;
                 font-size: 15px;
                 font-family: Roboto;
                 margin-top: 5px;
                 margin-bottom: 0;
-                
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
-        
+
         }
-        
+
     }
 }
 
 
-     
-h4{
+
+h4 {
     margin: 0;
     font-size: 18px;
     font-family: Roboto;
-    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     
 }
 
 
 /* Animation */
 .check {
-                  background:#1ef1c6 ;
-                  width: 59px;
-                  border-radius: 0px 15px 15px 0px;
-                  height: 75px;
-                  position: absolute;
-                  right:-46px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  transition: transform 400ms ease-in-out;
-                  
-                  
-                  
-
-                  i{
-                    
-                    -webkit-text-fill-color:white;
-                     font-size: 20px;
-                  
-                    
-
-                    
-                  }
-                  
-                
-}
-
-.check-hidden{
-
-    background: #F6F6F6;
-    width: 60px;
+    background: #99E2D0;
+    width: 59px;
     border-radius: 0px 15px 15px 0px;
-    height: 76px;
+    height: 75px;
     position: absolute;
-    right:-46px;
+    right: -59px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    transition: margin 400ms ease-in-out;
+
+
+
+
+    i {
+
+        -webkit-text-fill-color: white;
+        font-size: 20px;
+
+    }
+
+
+}
+
+.ellipsis-h4 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+
+p {  
+    transition: margin 400ms ease-in-out;
+    margin: 0;
+    color: white;
+}
 
 }
 
@@ -301,12 +308,12 @@ h4{
 
 footer {
 
-position: relative;
-bottom: -1162px;
-   
+    position: relative;
+    bottom: -1162px;
+
 }
 
-.footer-list{
+.footer-list {
     background: var(--Grey, #353535);
     display: flex;
     width: 100%;
@@ -314,9 +321,9 @@ bottom: -1162px;
     flex-direction: column;
     align-items: flex-start;
     box-sizing: border-box;
-    
-    
-    
+
+
+
 
 }
 
@@ -325,14 +332,14 @@ h5 {
     font-family: Shrikhand;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom : 16px;
+    margin-bottom: 16px;
     margin-top: 0px;
-    
+
 
 }
 
 h6 {
-    color:#FFF;
+    color: #FFF;
     font-size: 16px;
     font-weight: 500;
     font-family: Roboto;
@@ -340,9 +347,9 @@ h6 {
     padding-bottom: 7px;
     cursor: pointer;
 
-    
-   
-    
+
+
+
 }
 
 .list {
@@ -351,181 +358,149 @@ h6 {
     align-items: center;
     gap: 11px;
     cursor: pointer;
-    
-    
 
-    
+
+
+
 }
 
-.list .fa-handshake  {
+.list .fa-handshake {
     position: relative;
     width: 11.918px;
     transform: rotate(-45deg);
     margin: 0px;
     left: 1px;
     bottom: 4px;
+    color: white;
 }
-.fa-utensils{
+
+.fa-utensils {
     position: relative;
     font-size: 13px;
-    bottom:4px
+    bottom: 4px;
+    color:white
+
 }
 
-/* Media*///////////////////////////////////////////////////////////////////////////
+/* Media*/
+//////////////////////////////////////////////////////////////////////////
 
-@media (min-width:1024px  )
+@media (min-width:1024px) {
 
-{
-    
-    .Menu{
+    .Menu {
 
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-   .cards {
-    position: relative;
-    display: flex;
-    width: 1055px;
-    flex-direction: column;
-    align-content: center;
-   
 
-   }
-   
-   
-   .card-price{
-
-    padding: 12px 193px 0px 193px;
-
-    &:hover p {
-
-        text-overflow: ellipsis;
-        overflow: hidden;
-        width: 400px;
-        white-space: nowrap;
-
-        
-       }
-
-       &:hover h4 {
-
-        text-overflow: ellipsis;
-        overflow: hidden;
-        width: 400px;
-        white-space: nowrap;
-        
-
-       }
+    .cards {
+        position: relative;
+        display: flex;
+        width: 1055px;
+        flex-direction: column;
+        align-content: center;
 
 
-
-
-
-   }
-
-   .title{
-    display:flex;
-    justify-content: center;
-    
-    .title-hearts{
-       
-       position: absolute;
-       right: 300px;
-        
     }
 
 
-
-   }
-
-
-   h3{
-
-    position: relative;
-    left: 192px;
-   }
-   
-   /*animation desktop*///////////////
-
-   .check {
-
-    position: absolute;
-    right:132px;
+    .card-price {
+        padding: 12px 0 0px 0;
 
 
-   }
+    }
 
-   .check-hidden{
+    .title {
+        display: flex;
+        justify-content: center;
+
+        .title-hearts {
+
+            position: absolute;
+            right: 300px;
+
+        }
+
+
+
+    }
+
+
+    h3 {
+        position: relative;
+    }
+
+    /*animation desktop*/
+    //////////////
+
+    .check {
+        position: absolute;
+    }
 
     
-    position: absolute;
-    right:131px;
-    
 
 
-}
 
-
-   
-    /*Footer*//////////////////////////////////
+    /*Footer*/
+    /////////////////////////////////
 
 
     footer {
 
         position: relative;
         bottom: -10px;
-       
-        
-           
-        }
 
 
-    .footer-list{
-    
+
+    }
+
+
+    .footer-list {
+
         flex-direction: row;
         justify-content: flex-end;
         gap: 20px;
         padding-top: 30px;
         padding-bottom: 30px;
-        
-        
+
+
     }
-        
-    
-    
-     h5{
-    
+
+
+
+    h5 {
+
         order: 4;
         padding-left: 50px;
         padding-right: 50px;
         margin-bottom: 0;
         margin-top: 30px;
-        
-    
+
+
     }
-    
-    .list i  {
-    
+
+    .list i {
+
         margin-bottom: 0;
         margin-top: 31px;
         font-size: 13px;
-        
+
     }
-    
-    .list .fa-handshake{
+
+    .list .fa-handshake {
         position: relative;
         margin-top: 20px;
         font-size: 11px;
         top: 2px;
     }
-    
-    h6{
-    
+
+    h6 {
+
         margin-top: 30px;
-       
+
     }
-    
+
 
 
 

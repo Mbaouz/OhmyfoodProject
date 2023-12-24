@@ -176,6 +176,9 @@ h4, p {
   padding: 20px;
   width: 100%;
 }
+.Restaurant a {
+  text-decoration: none;
+}
 
 .card-content {
   display: flex;
