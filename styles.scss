@@ -86,7 +86,7 @@ h1{
    
 }
 h2 {
-    color: var(--Grey, #353535);
+    
     text-align: center;
     font-size: 18px;
     font-weight: 300;
@@ -418,16 +418,30 @@ h6 {
 
 }
 
-/* Media*////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////* Media*////////////////////////////////////////////////////////////////
 
 @media (min-width:1024px  ) {
 
 
     .title-home{
 
-        background-color: white;
+        background-color:#F6F6F6;
+        gap: 30px;
     }
 
+    h1 {
+
+        font-size: 40px;
+        font-weight: 700;
+        margin: 0;
+        margin-top: 30px;
+    }
+
+   
+    .BtExplore {
+
+        margin-bottom: 30px;
+    }
     /*Section Fonctionnement*/
 
     .Fonction{
@@ -438,6 +452,7 @@ h6 {
     }
     h3 {
         margin: 0px;
+        margin-bottom: 10px;
     }
 
 .BtFonction {
