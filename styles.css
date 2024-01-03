@@ -79,11 +79,6 @@ h2 {
   font-family: Roboto;
 }
 
-a {
-  color: initial;
-  border: none;
-}
-
 .BtExplore button {
   display: flex;
   align-items: center;
@@ -177,6 +172,7 @@ h4, p {
 }
 .Restaurant a {
   text-decoration: none;
+  color: initial;
 }
 
 .card-content {
@@ -298,6 +294,24 @@ h6 {
   bottom: 2px;
 }
 
+.loader {
+  position: absolute;
+  border: 16px solid #b7b6b6;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media (min-width: 1024px) {
   .title-home {
     background-color: #F6F6F6;

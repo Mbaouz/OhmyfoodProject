@@ -95,10 +95,7 @@ h2 {
     font-family: Roboto;
     
 }
-a { 
-    color: initial;
-    border: none;
-}
+
 
 
 .BtExplore button {
@@ -232,6 +229,7 @@ h4 , p{
     width: 100%;
     a{
         text-decoration: none;
+        color: initial;
     }
    
     
@@ -417,6 +415,24 @@ h6 {
    
 
 }
+
+
+///* Loader*///
+.loader {
+    position: absolute;
+    border: 16px solid #b7b6b6; 
+    border-top: 16px solid #3498db; 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    
+  }
 
 /////////////////////////////////////////////////* Media*////////////////////////////////////////////////////////////////
 
