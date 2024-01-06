@@ -133,10 +133,11 @@ h3 {
 
 /* Cards menu price*/
 .card-price {
-  padding: 12px 0px 0px 15px;
+  margin: 12px 12px 0px 15px;
   position: relative;
   overflow: hidden;
-  margin-right: 15px;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15.043px;
 }
 .card-price:hover .ellipsis-h4 p {
   margin-right: 59px;
@@ -150,7 +151,6 @@ h3 {
 .card-price .card-content {
   border-radius: 15.043px;
   background: var(--White, #FFF);
-  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   padding: 15px;
 }
 .card-price .card-content .subtitle {
@@ -289,7 +289,7 @@ h6 {
     align-content: center;
   }
   .card-price {
-    padding: 12px 0 0px 0;
+    padding: 0;
   }
   .title {
     display: flex;
