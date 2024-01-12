@@ -47,6 +47,13 @@ h2 {
 
 }
 
+
+.menu-max {
+    max-width: 635px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 /*section Menu*/
 
 .Menu {
@@ -178,12 +185,7 @@ h3 {
 
 }
 
-.menu-max {
-    max-width: 635px;
-    margin: 0 auto;
-    width: 100%;
-   
-}
+
 
 /* Cards menu price*/
 
@@ -265,7 +267,7 @@ h4 {
 }
 
 
-/* Animation */
+/* Animation check */
 .check {
     background: #99E2D0;
     width: 59px;
@@ -304,6 +306,50 @@ p {
 }
 
 }
+/* Animation menu */
+
+
+
+    .entree {
+      animation : dishes 1s both ;
+      opacity : 0 ;
+
+    }
+
+    .plats {
+
+        animation: dishes 1s both ;
+        animation-delay : 0.5s ;
+    }
+
+    .desserts {
+
+        animation : dishes 1s both ;
+        animation-delay : 1s;
+    }
+   
+
+
+@keyframes dishes {
+
+    0% {
+
+         transform : translate (0, 50px);
+         opacity : 0 ;
+
+    }
+
+  100% {
+     
+        transform : translate (0,0);
+        opacity : 1;
+
+
+  }
+
+
+}
+
 
 
 /*Footer*/

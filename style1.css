@@ -35,6 +35,12 @@ h2 {
   font-weight: 400;
 }
 
+.menu-max {
+  max-width: 635px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 /*section Menu*/
 .Menu img {
   -o-object-fit: cover;
@@ -125,12 +131,6 @@ h3 {
   margin-left: 15px;
 }
 
-.menu-max {
-  max-width: 635px;
-  margin: 0 auto;
-  width: 100%;
-}
-
 /* Cards menu price*/
 .card-price {
   margin: 12px 12px 0px 15px;
@@ -186,7 +186,7 @@ h4 {
   white-space: nowrap;
 }
 
-/* Animation */
+/* Animation check */
 .check {
   background: #99E2D0;
   width: 59px;
@@ -215,6 +215,32 @@ h4 {
   color: white;
 }
 
+/* Animation menu */
+.entree {
+  animation: dishes 1s both;
+  opacity: 0;
+}
+
+.plats {
+  animation: dishes 1s both;
+  animation-delay: 0.5s;
+}
+
+.desserts {
+  animation: dishes 1s both;
+  animation-delay: 1s;
+}
+
+@keyframes dishes {
+  0% {
+    transform: translate 0, 50px;
+    opacity: 0;
+  }
+  100% {
+    transform: translate 0, 0;
+    opacity: 1;
+  }
+}
 /*Footer*/
 footer {
   position: relative;
